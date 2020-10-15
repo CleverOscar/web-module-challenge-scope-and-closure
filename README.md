@@ -42,6 +42,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure is just another fancy word for level of scope, when a function is declared and created, a new scope is also created creating a private lexical environment. Functions will look outside of the scope chain to search for a variable being refferenced if it is not found within itself. Functions can not look into other functions though as they only look outward for context. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +65,12 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    Closure is used twice on this function, first when we declare our personaDice() function where we return and declare another function inside where a new closure is being created when declaring a new variable that outputs a random number from 1-6.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
 c. What is the lexical scope of `newRoll`? 
+    The lexical scope of `newRoll` is within the personalDice() function. 
 
 ### Task 2c - Exit Ticket
 
