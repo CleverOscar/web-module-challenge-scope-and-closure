@@ -1,21 +1,21 @@
 # Scope and Closure Challenge
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.
-
+ 
 ## JavaScript Foundations
 
 ## Scope and Closures
 
 ## Objectives
 
-- Explain function scope
-- Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript  
+- Explain function scope: Function scope is a level of scope where functions are created within functions that allow us to create different ways of methods.
+- Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript: Closure is just another fancy word for level of scope, when a function is declared and created, a new scope is also created creating a private lexical environment. Functions will look outside of the scope chain to search for a variable being refferenced if it is not found within itself. Functions can not look into other functions though as they only look outward for context. 
 
 ## Introduction
 
 This challenge focuses on both scope and closures.
 
-In this challenge you will be working to build a `scoreboard` (in the console) that takes randomly generated data and keeps track of a game's progress. If you're not familiar with the rules of baseball what you need to know is this: there are 9 innings and teams take turns "at-bat." Teams can only score while they are at bat. A team stops being at bat once they have gotten 3 `outs` by either striking out or through game play. You can read more about baseball rules [here](https://www.rulesofsport.com/sports/baseball.html).
+In this challenge you will be working to build a `scoreboard` (in the console) that takes randomly generated deata and keps track of a game's progress. If you're not familiar with the rules of baseball what you need to know is this: there are 9 innings and teams take turns "at-bat." Teams can only score while they are at bat. A team stops being at bat once they have gotten 3 `outs` by either striking out or through game play. You can read more about baseball rules [here](https://www.rulesofsport.com/sports/baseball.html).
 
 A scoreboard in a major league stadium looks something like this. In fact, the scoreboard at Fenway Park in Boston is actually quite famous. 
 
