@@ -78,6 +78,9 @@ function inning(){
   return Math.floor(Math.random() * 3);
 }
 
+const pointsScored = inning();
+
+// console.log('Points:',pointsScored)
 
 /* Task 3: finalScore()
 
@@ -92,16 +95,22 @@ finalScore(inning, 9) might return:
 }
 */ 
 
-function finalScore(){
+function finalScore(callback, num){
+  var callback = callback;
 
   let scores = {
     "Home": 0,
     "Away": 0
   }
 
-  console.log(scores)
-
+  return function scoreKepper() {
+    return scores
+  }
 }
+
+const final = finalScore();
+
+
 
 
 // Function A
