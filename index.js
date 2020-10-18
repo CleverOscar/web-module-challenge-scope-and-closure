@@ -95,41 +95,24 @@ finalScore(inning, 9) might return:
 }
 */ 
 
-function finalScore(callback, num){
-  var callback = callback;
-
-  let scores = {
-    "Home": 0,
-    "Away": 0
-  }
-
-  return function scoreKepper() {
-    return scores
-  }
-}
-
-const final = finalScore();
-
-
-
 
 // Function A
-const nameconstruct = () => {
-  let name = 'Oscar';
+// const nameconstruct = () => {
+//   let name = 'Oscar';
 
-  // Function B
-  return function ( newName = '') {
-    if (newName === '') {
-      return name
-    } else {
-      name = newName;
-      return name;
-    }
-  }
-}
+//   // Function B
+//   return function ( newName = '') {
+//     if (newName === '') {
+//       return name
+//     } else {
+//       name = newName;
+//       return name;
+//     }
+//   }
+// }
 
 // Calling function A to set things up and fill namefunc with the returned function b
-const namefunc = nameconstruct();
+// const namefunc = nameconstruct();
 
 // Calling the function within namefunc which is actuall function B, this bypassing function
 // console.log(namefunc())
@@ -206,3 +189,47 @@ function scoreboard(/* CODE HERE */) {
 //   } //end of loop scope
 //   console.log(headCount)
 // }//end of function scope
+
+
+// const elements = ['water', 'air', 'fire', 'earth']
+// const schoolStuff = ['bookbag', 'notebook', 'pencil', 'highlighters']
+
+// const newForEach = (list, callback) => {
+//   for (let i = 0; i < list.length; i++) {
+//   callback(list[i], i);
+//  }
+// }
+
+// const logger = function(item, index) {
+//   console.log(item, index)
+// }
+
+// newForEach(elements, logger)
+
+// newForEach(schoolStuff, logger)
+
+// function showFirst(arrayList, callback) {
+//   callback(arrayList[0]);
+// }
+
+// function showLength(list, cb) {
+//   cb(list.length);
+// }
+
+// showLength(elements, (lengthOfList)=> {
+//   console.log(lengthOfList)
+// })
+
+// showFirst(elements, (firstItem) => {
+//   console.log(firstItem)
+// })
+
+// elements.forEach((element, index) => {
+//   // alert(element, index);
+// });
+
+// const newArray = elements.map((el, index) => {
+//   return `${el} + ${index}`
+// })
+
+// console.log(newArray)
